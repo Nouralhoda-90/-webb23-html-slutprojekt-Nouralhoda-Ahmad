@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>  
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+   
+    <title>Nouralhoda Ahmad</title>
+
+</head>
+
+<!-- i use sections to move smoothly from one page to other  -->
+
+
+<body>
+   
+    
+    <header >
+
+     <a href="" class="logo">Noura</a>
+        
+        <nav class="navigation">
+            <!-- I do burger menu  manually -->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+              </label>
+           
+           <ul >
+            <li  > <a href="#home" >about me</a></li>
+           <li > <a href="#projects" >Projects</a></li>
+           <li > <a href="#contact" >Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+    <section class="main" id="home">
+
+           <div id="content">
+            <h1>Hello, I'm Nouralhoda </h1>
+            <h2><span>Web Developer</span></h2>
+            <h3>I am a computer engineer</h3>
+            <p >I have always had an interest in computers and electronics, and I trained to be a
+                computer engineer in Cyprus in 2012. When I came to Sweden in 2015, I first studied SFI and
+                basic Swedish, then I studied an education in IT support (Lexicon).
+                
+                I am very motivated to start working! I want to use what I have learned, and long
+                after getting to work together with new colleagues, and develop in my work if I can
+                the chance, I will show that I am capable, and have a great desire to learn and
+                </p>
+            <a href="#projects" class="main-btn">View my work</a>         
+        </div>
+        <div>
+
+            <!-- picture tag, I use the dark media and bootsrap here -->
+            <picture>
+              <source media ="( prefers-color-scheme:dark )" srcset="image/dark-noura.jpg"/> 
+             
+              <img src="image/Noura.jpg "class="img-circle" alt="Noura"/>
+           </picture> 
+    </section>
+
+   
+<!-- I used the id = projects to call it by # : <a href="#projects">Projects</a>-->
+
+
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <!-- class= content  to call it in css to make it flex, row,wrap which means my projects will be beside each other and not crowded or stacked by each other -->
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image/gradute.jpg" />
+                </div>
+                <div class="project-info" >
+                    <p class="project-category">Facts about, inspirations and my hobbies</p>
+                    <strong class="project-title">
+                        <span>My life</span>
+                        <!-- more details like a link when it is clicked , it takes us to "my life project" -->
+                        <a href="project1.html" class="more-details" target="_blank" >More details</a>
+                        
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <picture>
+                        
+                        <img src="image/laziza.jpg" alt="laziza" style="height: 290px;">
+                      </picture> 
+                  
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Laziza resturant, details, menue and conatct informations</p>
+                    <strong class="project-title">
+                        <span>Resturant</span>
+                        <a href="project2.html"  class="more-details"target="_blank">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <!-- i want to use flexbox here for project-card class -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image/pie.jpg"  />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">way of make a blueberry pancake</p>
+                    <strong class="project-title">
+                        <span>Blueberry pancake</span>
+                        <a href="project3.html" class="more-details"target="_blank">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image" >
+                    <picture>
+                        
+                        <img src="image/dice.jpg" alt="Dice" height="355px">
+                      </picture> 
+                </div>
+                <div class="project-info" >
+                    <p class="project-category">Dice using Flexbox</p>
+                    <strong class="project-title">
+                        <span >dice</span>
+                        <a href="project4.html" class="more-details"target="_blank">More details</a>
+                    </strong>
+                </div>
+            </div>
+            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards contact" id="contact">
+        <h2 class="title" id="tittle">To reach me</h2>
+        <div class="content">
+            <div class="card" >
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <a href="tel:040-97 08 00">CALL US at 040-97 08 00 </a>
+                </div>
+                
+            </div>
+            <div class="card" id=>
+                <div class="icon">
+                    <i  id= business class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3 id= business>Email</h3>
+                    <a  id= business href="mailto:business@nouralhodaahmad ">business@nouralhodaahmad </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p class="footer-title">Copyrights @ <span>Nouralhoda Ahmad</span></p>
+        <!-- bootsrap for social media -->
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/nouralhoda-ahmed-9a0127146/"target="_blank"><i class="fab fa-linkedin-in fa-2x" style="color: #0082ca;"></i></a>
+            <a href="https://www.instagram.com/an.noora/" target="_blank"><i class="fab fa-instagram fa-2x" style="color: #ac2bac;"></i></a>
+            <a href="https://www.facebook.com/noora.an.98/"target="_blank"><i class="fab fa-facebook-f fa-2x" style="color: #3b5998;"></i></i></a>
+            
+        </div>
+    </footer>
+
+</body>
